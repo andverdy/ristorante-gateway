@@ -1,13 +1,13 @@
 #==========================================================
-#= Ordini Web Service - Versione Base
+#= Gateway Web Service - Versione Base
 #==========================================================
 server:
-  port: 8081
-  localPort: 8081
+  port: 8080
+  localPort: 8080
   
 spring:
   application:
-    name: ordini
+    name: gateway
 #==========================================================
 #= PARAMETRI DBMS MYSQL
 #==========================================================

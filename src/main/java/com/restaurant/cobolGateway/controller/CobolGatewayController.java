@@ -1,22 +1,25 @@
 package com.restaurant.cobolGateway.controller;
 
 
-import com.restaurant.cobolGateway.services.CobolGatewayService;
-import lombok.RequiredArgsConstructor;
+import com.restaurant.cobolGateway.entities.OrdiniEntity;
+import com.restaurant.cobolGateway.repositories.OrdiniRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/cobolGateway")
-@RequiredArgsConstructor
 public class CobolGatewayController {
 
-    private final CobolGatewayService ordiniService;
+    @Autowired
+    private OrdiniRepository ordiniRepository;
 
     @GetMapping("/getCobolGateway")
-    public String getCobolGateway(String input) throws Exception {
-        return "ok";
+    public List<OrdiniEntity> getCobolGateway() throws Exception {
+        return ordiniRepository.findAll();
     }
 }

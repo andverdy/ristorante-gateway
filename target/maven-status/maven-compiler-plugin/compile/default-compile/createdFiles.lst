@@ -1,0 +1,5 @@
+com\restaurant\cobolGateway\entities\OrdiniEntity$OrdiniEntityBuilder.class
+com\restaurant\cobolGateway\repositories\OrdiniRepository.class
+com\restaurant\cobolGateway\controller\CobolGatewayController.class
+com\restaurant\cobolGateway\CobolGatewayApplication.class
+com\restaurant\cobolGateway\entities\OrdiniEntity.class
