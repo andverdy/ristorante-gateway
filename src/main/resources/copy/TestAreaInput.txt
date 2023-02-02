@@ -1,0 +1,5 @@
+
+
+	 03 OBJECT-TEST-INPUT
+	   05 ID-UTENTE                 PIC 9(003).
+	   05 NOME-UTENTE               PIC X(10).
