@@ -22,4 +22,9 @@ public class CobolGatewayController {
     public List<OrdiniEntity> getCobolGateway() throws Exception {
         return ordiniRepository.findAll();
     }
+
+    @GetMapping("/getCobolArea")
+    public String getCobolArea(String inputArea) throws Exception {
+        return "OK";
+    }
 }
